@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Neighborhood Map Project</title>
+
+		<link href="lib/bootstrap.min.css" rel="stylesheet">
+		<link href="lib/bootstrap-theme.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+	</head>
+	<body>
+
+		<div class="yelp-list">
+			<div class="yelp-search">
+				<form class="input-group" data-bind="submit: updateYelpResults">
+		      <input type="text" class="form-control" data-bind="value: searchTerm">
+		      <span class="input-group-btn">
+		        <button class="btn btn-danger" type="button" data-bind="click: updateYelpResults">Yelp!</button>
+		      </span>
+		    </form>
+			</div>
+			<ul class="results"></ul>
+		</div>
+
+		<div id="map-canvas"></div>
+
+	  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+		<script src="lib/knockout.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+  	<script src="http://oauth.googlecode.com/svn/code/javascript/oauth.js"></script>
+  	<script src="http://oauth.googlecode.com/svn/code/javascript/sha1.js"></script>
+  	<script src="js/app.js"></script>
+  	<script src="js/model.js"></script>
+	</body>
+</html>
